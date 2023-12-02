@@ -6,355 +6,79 @@
   --fontfamily: Verdana, Geneva, Tahoma, sans-serif;
   --borderwidth2: 5px;
 }
-* {
-  padding: 0;
-  margin: 0;
-  }
-  
-body {
-padding: 0;
-margin: 0;
-}
-
-/* below header section CSS */
 
 
-header {
-height: 80px;
-width: 100%;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: flex-end;
+/* below navigation section custom CSS */
+
+
+.navigation {
 background: var(--color1);
 }
 
-#headername {
-  display: flex;
-  height: 50px;
-  width: 40%;
-  justify-content: flex-end;
-  align-items: center;
-  background: var(--color2);
+.navbar {
+--bs-navbar-padding-y: 0;
 }
 
-#headername h1, h2, h3 {
-font-family: var(--fontfamily);
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-brand {
 font-size: var(--fontsize1);
-color: var(--color1);
+font-weight: 600;
+font-family: var(--fontfamily);
+background: var(--color2);
+color:  var(--color1);
+padding: 0 20px 0 25%;
+margin-top: 10px;
+margin-bottom:10px;
+}
+
+.nav-link {
+  font-size: var(--fontsize2);
+  color: var(--color2);
+  text-decoration: underline;
+  font-weight: 600;
+  font-family: var(--fontfamily);
+  padding-left: 10px;
+  }
+
+#navbarNav{
+  padding-right: 20px;
+}
+
+.container-fluid {
+--bs-gutter-x: none;
 padding-right: 10px;
 }
 
-.headernavigation {
-  display: flex;
-  height: 40px;
-  width: 60%;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 10px;
-  align-items: flex-end;
-  background: var(--color1);
-  padding-right: 45px;
-}
-
-.navbutton {
-width: auto;
-font-size: 20px;
-font-family: var(--fontfamily);
-font-weight: bold;
-color: var(--color2);
-padding-left: 3px;
-padding-right: 3px;
-border-bottom: 3px solid var(--color2);
-}
-
-/* above header section CSS */
-/* below main section CSS */
-
-main {
-display: grid;
-width: 100%;
-/* below determine structure of grid inc. number of rows & columns and sizes */
-min-height: auto;
-row-gap: 30px;
-column-gap: 30px;
-grid-template-rows: 220px 300px 600px 200px 200px 100px 25px;
-grid-template-columns: 400px 2fr 2fr 15px;
-grid-template-areas: 
-"hero-image hero-image hero-image hero-image"
-"about-me-heading about-me-content about-me-content padding-right" 
-"work-heading work-content-large work-content-large padding-right"
-"work-heading work-content-small1 work-content-small2 padding-right"
-"work-heading work-content-small3 work-content-small4 padding-right"
-"contact-heading contact-content contact-content padding-right"
-"padding-bottom padding-bottom padding-bottom padding-bottom";
+.navbar-brand:hover {
+  color: var(--color1);
 }
 
 
-/* note grid-area does not have to match class title but good practice what is key is gird-area matches what specified in 'grid-template-areas' */
+/* below hero section custom CSS */
 
-#hero-image{
-grid-area: hero-image;
-position: relative;
-}
 
-#subtitle {
-  display: flex;
-  background-color: var(--color2);
-  position: absolute;
-  width: 465px;
-  padding-left: 10px;
-  bottom: 40px;
-  right: 45px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
+.heroimage {
+background-image: url(./Images/Hero-Image5.jpg);
+margin-bottom: 0px !important;
+padding-bottom: 20px !important;
+border-radius: 0px !important;
 }
 
 
-#about-me-heading{
-grid-area: about-me-heading;
-}
-
-#about-me-content{
-grid-area: about-me-content;
+.herotextposition {
 display: flex;
-align-content: flex-start;
-}
-
-#work-heading{
-grid-area: work-heading;
-}
-
-#work-content-large{
-  grid-area: work-content-large;
-  position: relative;
-  border:solid var(--color2);
-  border-width: var(--borderwidth2);
-  background-image: url("./Images/PortfolioImage.jpg");
-  justify-content: space-around;
-  background-size: cover;
-}
-
-#work-content-large:hover{
-  min-height:auto;
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Images/PortfolioImage.jpg");
-  background-size:cover;
-}
-
-#work-content-small1{
-  grid-area: work-content-small1;
-  position: relative;
-  border:solid var(--color2);
-  border-width: var(--borderwidth2);
-  background-image: url("./Images/Refactorcodeimage.jpg");
-  justify-content: space-around;
-  background-size: cover;
-}
-
-#work-content-small1:hover{
-  min-height:auto;
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Images/Refactorcodeimage.jpg");
-  background-size:cover;
-}
-
-#work-content-small2{
-  grid-area: work-content-small2;
-  position: relative;
-  border:solid var(--color2);
-  border-width: var(--borderwidth2);
-  background-image: url("./Images/Studyguideimage.jpg");
-  justify-content: space-around;
-  background-size: cover;
-}
-
-#work-content-small2:hover{
-  min-height:auto;
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Images/Studyguideimage.jpg");
-  background-size:cover;
-}
-
-#work-content-small3{
-  grid-area: work-content-small3;
-  position: relative;
-  border:solid var(--color2);
-  border-width: var(--borderwidth2);
-  background-image: url("./Images/Comingsoonimage.jpg");
-  justify-content: space-around;
-  background-size: cover;
-}
-
-#work-content-small3:hover{
-  min-height:auto;
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Images/Comingsoonimage.jpg");
-  background-size:cover;
-}
-
-#work-content-small4{
-  grid-area: work-content-small4;
-  position: relative;
-  border:solid var(--color2);
-  border-width: var(--borderwidth2);
-  background-image: url("./Images/Comingsoonimage.jpg");
-  justify-content: space-around;
-  background-size: cover;
-}
-
-#work-content-small4:hover{
-  min-height:auto;
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Images/Comingsoonimage.jpg");
-  background-size:cover;
-}
-
-#contact-heading{
-  grid-area: contact-heading;
-  display: flex;
-  align-items: center;
-}
-
-#contact-content {
-grid-area: contact-content;
-}
-
-#padding-bottom {
-  grid-area: padding-bottom;
-}
-
-#padding-right {
-  grid-area: padding-right;
-}
-
-a {
-text-decoration: none;
-}
-
-#hero-image img {
-  width: 100%;
-  height: 200px;
-  }
-  
-
-.sub-heading-format {
-display: flex;
-border-right: 5px solid var(--color1);
 justify-content: flex-end;
-align-items: flex-start;
-text-align: right;
-padding-left: 200px;
+padding-top: 90px !important;
+padding-bottom:  0px !important;
 }
 
-.contact-content {
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: center;
-}
-
-#colourchange {
-  color: var(--color1);
-  border-bottom: 3px solid var(--color1);
-}
-
-p {
-  color: var(--color1);
-  font-size: var(--fontsize2);
-  font-family: var(--fontfamily);
-}
-
-.workcontentsmall {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  top: 30%;
-  height: auto;
-  background: var(--color2);
-  width: auto;
-  padding:15px
-}
-
-
-.workcontentlarge{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  top: 75%;
-  height: auto;
-  background: var(--color2);
-  width: auto;
-  padding:15px
-}
-
-
-h4 {
+.herotextformat {
+background: var(--color2);
+padding: 5px;
 font-family: var(--fontfamily);
-font-size: 26px;
 color: var(--color1);
+font-size: var(--fontsize1);
 }
-
-#about-me-content img {
-height: 100%;
-width: auto;
-}
-
-#about-me-content p {
-padding-left:30px;
-}
-
-
-
-
-@media only screen and (max-width: 1000px) {
-  
-  main {
-    display: grid;
-    width: 100%;
-    /* below determine structure of grid inc. number of rows & columns and sizes */
-    min-height: auto;
-    row-gap: 30px;
-    column-gap: 30px;
-    grid-template-rows: 220px 450px 600px 200px 200px 200px 200px 100px 25px;
-    grid-template-columns: 200px 2fr 2fr 15px;
-    grid-template-areas: 
-    "hero-image hero-image hero-image hero-image"
-    "about-me-heading about-me-content about-me-content padding-right" 
-    "work-heading work-content-large work-content-large padding-right"
-    "work-heading work-content-small1 work-content-small1 padding-right"
-    "work-heading work-content-small2 work-content-small2 padding-right"
-    "work-heading work-content-small3 work-content-small3 padding-right"
-    "work-heading work-content-small4 work-content-small4 padding-right"
-    "contact-heading contact-content contact-content padding-right"
-    "padding-bottom padding-bottom padding-bottom padding-bottom";
-    }
-    
-
-    #about-me-content img {
-      height: 100%;
-      width: auto;
-      display: none;
-      }
-      
-
-    .contact-content {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      }
-
-    .navbutton {
-      width: auto;
-      font-size: 12px;
-      font-family: var(--fontfamily);
-      font-weight: bold;
-      color: var(--color2);
-      padding-left: 3px;
-      padding-right: 3px;
-      border-bottom: 3px solid var(--color2);
-      }
-
-    }
