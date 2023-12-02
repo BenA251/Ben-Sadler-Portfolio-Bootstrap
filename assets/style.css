@@ -82,3 +82,9 @@ font-family: var(--fontfamily);
 color: var(--color1);
 font-size: var(--fontsize1);
 }
+
+/* below grid system custom CSS */
+
+.grid {
+border: solid 1px red;
+}
