@@ -85,10 +85,6 @@ font-size: var(--fontsize1);
 
 /* below grid system custom CSS */
 
-.grid {
-border: solid 1px red;
-}
-
 .card {
 border: solid 5px var(--color2);
 margin: 15px 5px;
@@ -166,3 +162,34 @@ li {
 text-decoration: none;
 }
 
+
+
+
+
+
+.SectionHeadings {
+  display: flex;
+  border-right: 5px solid var(--color1);
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: right;
+  height: 100%;
+}
+
+.SectionHeadings h2 {
+  font-family: var(--fontfamily);
+  font-size: var(--fontsize1);
+  color: var(--color1);
+  font-weight: bolder;
+  padding-right: 10px;
+  padding-left: 300px;
+  }
+
+
+.row {
+  padding-top: 50px;
+}
+
+.contact {
+  padding-bottom: 50px;
+}
