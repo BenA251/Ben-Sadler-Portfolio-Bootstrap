@@ -91,7 +91,7 @@ border: solid 1px red;
 
 .card {
 border: solid 5px var(--color2);
-margin: 5px;
+margin: 15px 5px;
 background: var(--color2);
 }
 
@@ -112,4 +112,21 @@ background: var(--color2);
   color: var(--color1);
   font-size: var(--fontsize2);
   font-family: var(--fontfamily);
+}
+
+.img-fluid {
+  margin: 15px 5px;
+}
+
+
+
+#ProfileDescription {
+  margin: 15px 5px;
+}
+
+#ProfileDescription p {
+  color: var(--color1);
+  font-size: var(--fontsize2);
+  font-family: var(--fontfamily);
+
 }
