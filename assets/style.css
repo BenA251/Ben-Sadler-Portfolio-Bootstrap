@@ -88,3 +88,28 @@ font-size: var(--fontsize1);
 .grid {
 border: solid 1px red;
 }
+
+.card {
+border: solid 5px var(--color2);
+margin: 5px;
+background: var(--color2);
+}
+
+
+.projects a {
+  text-decoration: none;
+}
+
+.card-title {
+  font-family: var(--fontfamily);
+  font-size: 26px;
+  color: var(--color1);
+  font-weight: 700;
+}
+
+
+.card-text {
+  color: var(--color1);
+  font-size: var(--fontsize2);
+  font-family: var(--fontfamily);
+}
