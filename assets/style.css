@@ -130,3 +130,9 @@ background: var(--color2);
   font-family: var(--fontfamily);
 
 }
+
+li {
+  color: var(--color1);
+  font-size: var(--fontsize2);
+  font-family: var(--fontfamily);
+}
