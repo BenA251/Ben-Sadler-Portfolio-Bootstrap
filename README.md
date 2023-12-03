@@ -74,7 +74,7 @@ The links on top navigation bar can be used to jump to specific sections within 
 
 <strong>Homepage Screenshot:</strong> <br>
 
-![alt text](TBD)
+![alt text](./assets/Images/Screenshot.png)
 
 
 ## Credits

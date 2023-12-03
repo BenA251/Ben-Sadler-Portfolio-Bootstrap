@@ -86,7 +86,7 @@ font-size: var(--fontsize1);
 /* below grid system custom CSS */
 
 .card {
-border: solid 5px var(--color2);
+border: solid 7px var(--color2);
 margin: 15px 5px;
 background: var(--color2);
 }
@@ -192,4 +192,15 @@ text-decoration: none;
 
 .contact {
   padding-bottom: 50px;
+}
+
+#colourchange:hover {
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transition: 0.1s;
+  border: solid 7px var(--color1);
+
 }
